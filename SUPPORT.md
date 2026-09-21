@@ -12,3 +12,6 @@ Search existing answers first. Include:
 Discussions are public. Never post an API key, full request headers, private
 project source, or raw participant data. Use [SECURITY.md](SECURITY.md) for
 vulnerabilities instead of ordinary support.
+
+For a private matter, such as a conduct report or an exposed credential, email
+[ian@qloo.com](mailto:ian@qloo.com) instead of posting.

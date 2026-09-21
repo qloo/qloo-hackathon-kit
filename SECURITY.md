@@ -9,6 +9,6 @@ Never include Qloo API keys, model-provider keys, tokens, participant data, or
 internal URLs in a report. Explain how to reproduce the issue with redacted
 inputs and the affected kit or harness version.
 
-If a credential is misplaced or exposed, stop using it and ask for revocation
-through [Support](SUPPORT.md). Identify the credential by team or participant
-name only; never include the key.
+If a credential is misplaced or exposed, stop using it and email
+[ian@qloo.com](mailto:ian@qloo.com) to have it revoked. Identify the credential
+by team or participant name only; never include the key.

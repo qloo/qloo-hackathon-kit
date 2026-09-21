@@ -6,7 +6,7 @@ people. Harassment, discrimination, threats, doxxing, or sharing another
 person's credentials or private data are not acceptable.
 
 If you experience or witness conduct that conflicts with this standard, report
-it privately to an event organizer. Do not report it in Discussions, issues, or
-any other public space.
+it privately by email to [ian@qloo.com](mailto:ian@qloo.com). Do not report it
+in Discussions, issues, or any other public space.
 Organizers may remove content, limit participation, or take other action needed
 to keep the event safe.
