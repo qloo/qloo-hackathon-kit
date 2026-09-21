@@ -1,0 +1,29 @@
+name: Bug report
+description: Report a reproducible problem with the Qloo Hackathon Kit
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include API keys, tokens, private project source, or personal data.
+        For a vulnerability, use the private reporting path in SECURITY.md.
+  - type: input
+    id: kit_version
+    attributes:
+      label: Kit and harness version
+      placeholder: "Kit 0.1.0; qloo 0.1.25"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      placeholder: "Use redacted commands and inputs only."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true

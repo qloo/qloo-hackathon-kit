@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "name": "Qloo Hackathon Kit",
+  "status": "published",
+  "repository": "https://github.com/qloo/qloo-hackathon-kit",
+  "minimum_harness_version": "0.1.25",
+  "supported_surfaces": [
+    "qloo exec",
+    "qloo mcp"
+  ],
+  "excluded_components": [
+    "model-backed integration and build modes",
+    "hosted MCP endpoints"
+  ]
+}

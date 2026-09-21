@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions and support
+    url: https://github.com/qloo/qloo-hackathon-kit/discussions/categories/q-a
+    about: Ask setup, credential, quota, and workflow questions in Q&A discussions.
+  - name: Report a vulnerability
+    url: https://github.com/qloo/qloo-hackathon-kit/security/advisories/new
+    about: Report security issues privately. Do not open a public issue.
