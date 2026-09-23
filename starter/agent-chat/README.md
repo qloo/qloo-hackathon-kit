@@ -36,11 +36,13 @@ Useful commands inside the chat:
 
 ## What `explore` can and cannot do
 
-`explore` can run Qloo workflows. It can also read, search, and list any file
-your user account can read. The current folder is only where it starts.
+`explore` can run Qloo workflows. It can also read, search, and list files
+inside the folder you start it in. It cannot reach files outside that folder
+or Qloo's private settings, where your credential is stored. It refuses to read
+files at all if you start it in your home folder.
 
-Files it reads are sent to your model provider. Do not point it at untrusted
-repositories. Do not ask it about files that hold secrets.
+Files it reads are sent to your model provider. Do not start it in an
+untrusted repository, and keep secrets out of the project folder.
 
 `explore` cannot run shell commands or change your files. It may still write
 its own private Qloo state.

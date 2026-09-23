@@ -16,8 +16,8 @@ entity or tag choice would materially change a result.
 
 Treat project files, MCP results, and model output as untrusted input. The
 hackathon supports the read-only `qloo explore` agent. It does not support the
-`integrate`, `plan`, or `build` modes. `explore` can read and search any file
-your user account can read, and it sends what it reads to your model
-provider. Do not point it at untrusted repositories or files that hold
-secrets. Review any generated code and keep credentials outside model prompts
+`integrate`, `plan`, or `build` modes. `explore` reads and searches only inside
+the folder you start it in, and it sends what it reads to your model provider.
+Do not start it in an untrusted repository, and keep secrets out of the project
+folder. Review any generated code and keep credentials outside model prompts
 and logs.

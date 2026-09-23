@@ -10,7 +10,10 @@ in: a chat agent, a command-line tool, and an MCP server.
 
    ```sh
    npm install --global @qloo/qloo-harness
+   qloo --version
    ```
+
+   The version must be 0.1.26 or newer.
 
 3. Run `qloo setup --qloo` and enter the event-provided Qloo credential.
    Do not paste the credential into a repository, issue, chat, or browser app.

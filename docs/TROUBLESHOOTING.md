@@ -55,9 +55,8 @@ The server started but has no usable Qloo credential. Run
 backend's environment and that the backend passes `env: process.env` to the
 stdio transport.
 
-If a key is set and the backend exits with `MCP_ADAPTER_FAILURE` instead,
-Qloo most likely rejected the key. Run `qloo doctor --network` to confirm,
-then ask through [Support](../SUPPORT.md) for a replacement credential.
+If a key is set and the backend still exits with `QLOO_AUTH`, Qloo rejected the
+key. Ask through [Support](../SUPPORT.md) for a replacement credential.
 
 ## The agent says no model is configured
 
@@ -74,3 +73,9 @@ qloo setup --status
 Do not force a fuzzy tag or entity match into your project. Refine the concept,
 inspect the workflow request/provenance, and describe the assumption in your
 submission.
+
+## The agent says a path is outside the folder Qloo started in
+
+`qloo explore` reads only inside the folder you start it in. Quit, change to
+your project folder, and start `qloo explore` again. If it says workspace files
+are unavailable, you started it in your home folder or above it.
