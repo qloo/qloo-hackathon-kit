@@ -1,10 +1,10 @@
 # CLI Workflow Starter
 
 Use this starter when your project can call a local command from a backend,
-script, or build job. It uses `find_tags`, a deterministic read-only workflow
-that does not require you to know a Qloo tag ID in advance.
+script, or build job. `qloo exec` runs validated Qloo workflows. `qloo api`
+calls individual Qloo API endpoints. Both print JSON.
 
-## Run it
+## Run a workflow with qloo exec
 
 1. Install the public harness and complete `qloo setup --qloo` from the kit root
    instructions.
@@ -24,6 +24,22 @@ events, add `--jsonl`.
 ```sh
 qloo exec find_tags --input-file request.json --jsonl
 ```
+
+## Call the API directly with qloo api
+
+Use `qloo api` when you need one endpoint rather than a whole workflow:
+
+```sh
+qloo api search --query "Agatha Christie" --json
+qloo api search --query "Agatha Christie" --type book --take 3 --json
+```
+
+Add `--dry-run` to see the request without calling Qloo. List every command
+with `qloo api --help`.
+
+Do not use `--api-key`: it leaves the key in your shell history. The command
+uses the credential from `qloo setup --qloo` or the `QLOO_API_KEY` environment
+variable.
 
 ## Next steps
 

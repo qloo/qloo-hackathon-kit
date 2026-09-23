@@ -15,5 +15,6 @@ your project needs, respect the event quota, and make retry behavior bounded.
 Do not automate bulk scraping or use Qloo calls to recreate an unrelated
 database.
 
-For the event, the supported surfaces are `qloo exec` and `qloo mcp` from the
-public `@qloo/qloo-harness` package.
+For the event, the supported surfaces are `qloo explore`, `qloo exec`,
+`qloo api`, and `qloo mcp` from the public `@qloo/qloo-harness` package. All of
+them use the same credential and count against the same quota.

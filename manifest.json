@@ -5,11 +5,14 @@
   "repository": "https://github.com/qloo/qloo-hackathon-kit",
   "minimum_harness_version": "0.1.25",
   "supported_surfaces": [
+    "qloo explore",
     "qloo exec",
+    "qloo api",
     "qloo mcp"
   ],
   "excluded_components": [
-    "model-backed integration and build modes",
-    "hosted MCP endpoints"
+    "model-backed integration, planning, and build modes",
+    "hosted MCP endpoints",
+    "legacy qloo api mcp server"
   ]
 }

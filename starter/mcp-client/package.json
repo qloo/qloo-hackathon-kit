@@ -1,0 +1,15 @@
+{
+  "name": "qloo-mcp-backend-starter",
+  "private": true,
+  "type": "module",
+  "description": "Start qloo mcp from a backend and call one Qloo workflow.",
+  "scripts": {
+    "start": "node backend.mjs"
+  },
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.30.1"
+  }
+}

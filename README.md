@@ -1,6 +1,7 @@
 # Qloo Hackathon Kit
 
-Build a taste-powered project using Qloo's public terminal and MCP surfaces.
+Build a taste-powered project with Qloo. One npm package gives you three ways
+in: a chat agent, a command-line tool, and an MCP server.
 
 ## Start here
 
@@ -11,24 +12,29 @@ Build a taste-powered project using Qloo's public terminal and MCP surfaces.
    npm install --global @qloo/qloo-harness
    ```
 
-3. Run `qloo setup --qloo` and authenticate with the event-provided Qloo credential.
+3. Run `qloo setup --qloo` and enter the event-provided Qloo credential.
    Do not paste the credential into a repository, issue, chat, or browser app.
-4. Choose a starting route:
-
-   - [CLI workflow starter](starter/cli-workflow/README.md) for a script or
-     backend integration.
-   - [MCP starter](starter/mcp-client/README.md) for an MCP-compatible client.
-5. Read [API access and limits](docs/API_ACCESS.md) and
+4. Read [API access and limits](docs/API_ACCESS.md) and
    [safe use](docs/SAFE_USE.md) before making a live request.
 
-The supported event surface is intentionally small: deterministic `qloo exec`
-workflows and canonical `qloo mcp`. The harness's model-backed integration and
-build modes are not part of the hackathon because their approval controls are
-not an operating-system sandbox.
+## Choose a route
+
+| Route | Use it to | Also needs | Starter |
+| --- | --- | --- | --- |
+| Chat agent: `qloo explore` | Ask Qloo questions in plain language and learn what the data can answer. | A model-provider sign-in (`qloo setup --model`). | [Agent chat](starter/agent-chat/README.md) |
+| CLI: `qloo exec`, `qloo api` | Call Qloo from a script or backend and get JSON back. | Nothing else. | [CLI workflow](starter/cli-workflow/README.md) |
+| MCP server: `qloo mcp` | Give Qloo tools to an MCP desktop client or to your own app's model. | An MCP client, or a backend that can start a local process. | [MCP](starter/mcp-client/README.md) |
+
+`qloo explore`, `qloo exec`, and `qloo mcp` run the same validated workflows
+and return the same result shape, so you can prototype in one and ship in
+another. `qloo api` returns the raw API response.
+
+The harness's `integrate`, `plan`, and `build` modes are not part of the
+hackathon. Their approval controls are not an operating-system sandbox.
 
 ## What you can build
 
-Use Qloo's validated workflows to find Qloo tags, describe an entity, discover
+Use Qloo's workflows to find Qloo tags, describe an entity, discover
 recommendations, compare audiences, rank a shortlist, or investigate trends
 and geographic popularity. Qloo results describe aggregate affinities; they
 are not evidence of a person's identity, preferences, or future behavior.
